@@ -2,7 +2,7 @@ import java.math.BigInteger
 
 fun main()
 {
-    print("Factorial is: ${fact(BigInteger("10000"))}")
+    print("Factorial is: ${fact(BigInteger("10"))}")
 }
 tailrec fun fact(n: BigInteger, temp: BigInteger = BigInteger("1")): BigInteger {
     return if (n == BigInteger("1")){
