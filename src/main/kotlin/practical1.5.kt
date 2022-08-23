@@ -13,7 +13,7 @@ fun main()
         8->println("Aug")
         9->println("Sep")
         10->println("Oct")
-        11->println("Nev")
+        11->println("Nov")
         12->println("Dec")
         else->print("Enter valid Month")
     }
