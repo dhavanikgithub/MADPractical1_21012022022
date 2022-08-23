@@ -12,5 +12,4 @@ fun main()
     println("String to Integer: $int")
     double = str.toDouble()
     println("String to Double: $double")
-
 }
