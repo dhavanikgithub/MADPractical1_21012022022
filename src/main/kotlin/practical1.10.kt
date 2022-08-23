@@ -1,29 +1,27 @@
 fun main()
 {
-    var car1=Car("BMW","12",1000000,"Dhavanik",8000000)
-    println("${car1.getCarInformation()}")
-    println("${car1.getCurrentCarPrice()}")
-    println("${car1.getOriginalCarPrice()}")
-    println("${car1.displayCarInfo()}")
+    println("Car1 Object:")
+
 }
-class Car constructor(type:String, model:String, price:Long, owner:String, originalPrice:Long)
+class Car constructor(type:String, model:String, price:Long, owner:String, miles:Long)
 {
     var type:String=type
     var model:String=model
-    var price:Long=price
     var owner:String=owner
-    var originalPrice:Long=originalPrice
+    var price:Long= price
+    var miles:Long=miles
+    var currentPrice= this.price -(miles*10)
     fun getCarInformation():String
     {
-        return type
+        return "Car Information: $type, $model"
     }
-    fun getOriginalCarPrice():Long{
-        return originalPrice
+    fun getOriginalCarPrice():String{
+        return "Car Original Price: $price"
     }
-    fun getCurrentCarPrice():Long{
-        return price
+    fun getCurrentCarPrice():String{
+        return "Car Current Price: $currentPrice"
     }
     fun displayCarInfo():String{
-        return "$type\n$model\n$price\n$owner\n$originalPrice"
+        return "Car Owner: $owner\nMiles Drive: $miles"
     }
 }
