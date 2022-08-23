@@ -1,13 +1,5 @@
 fun main()
 {
-//    var mon = listOf("jan","feb","march","apr","may","jun","jul","aug","sep","oct","nev","dec")
-//    print("Enter Month number: ")
-//    var mon_num:Int= readLine()!!.toInt()
-//    if(mon_num>=1 && mon_num <= 12)
-//        print("${mon[--mon_num]}")
-//    else
-//        print("Enter valid month")
-
     print("Enter Month Number: ")
     var mon:Int= readLine()!!.toInt()
     when(mon){
